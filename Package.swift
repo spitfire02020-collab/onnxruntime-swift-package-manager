@@ -99,7 +99,7 @@ if let pod_archive_path = ProcessInfo.processInfo.environment["ORT_POD_LOCAL_PAT
        Target.binaryTarget(name: "onnxruntime",
                            url: "https://github.com/spitfire02020-collab/onnxruntime-swift-package-manager/releases/download/custom-coreml-v1.24.2-1/onnxruntime-c-1.24.2.zip",
                            // SHA256 checksum
-                           checksum: "c9bfe8bd8dd07b368c8aba867b1c27f442a31b69386494772ac8a0b4813a48e6")
+                           checksum: "db77edb9216338107b582fab752b68384bbed0dd36aa268cf6e4e12f722cc42d")
     )
 }
 
