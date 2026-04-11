@@ -93,11 +93,13 @@ if let pod_archive_path = ProcessInfo.processInfo.environment["ORT_POD_LOCAL_PAT
 
 } else {
     // ORT release
+    // CUSTOM BUILD: Use locally-built ORT with CoreML V2 support
+    // Download from GitHub Releases: https://github.com/spitfire02020-collab/onnxruntime-swift-package-manager/releases/tag/custom-coreml-v1.24.2
     package.targets.append(
        Target.binaryTarget(name: "onnxruntime",
-                           url: "https://download.onnxruntime.ai/pod-archive-onnxruntime-c-1.24.2.zip",
+                           url: "https://github.com/spitfire02020-collab/onnxruntime-swift-package-manager/releases/download/custom-coreml-v1.24.2/onnxruntime-c-1.24.2.zip",
                            // SHA256 checksum
-                           checksum: "f7100a992d2a8135168c8afd831e6a58b465349101982aa58b3e11d36e600b54")
+                           checksum: "c9bfe8bd8dd07b368c8aba867b1c27f442a31b69386494772ac8a0b4813a48e6")
     )
 }
 
