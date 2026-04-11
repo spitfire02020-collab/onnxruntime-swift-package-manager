@@ -95,8 +95,8 @@ if let pod_archive_path = ProcessInfo.processInfo.environment["ORT_POD_LOCAL_PAT
     // ORT release - XCFramework with CoreML V2 support
     package.targets.append(
        Target.binaryTarget(name: "onnxruntime",
-                           url: "https://github.com/spitfire02020-collab/onnxruntime-swift-package-manager/releases/download/custom-coreml-v1.24.2-3/onnxruntime-xcf.zip",
-                           checksum: "2b8fab93269d80c01c817dc62d67eef6bb9768f62a2a5c85a16673c462f3ef55")
+                           url: "https://github.com/spitfire02020-collab/onnxruntime-swift-package-manager/releases/download/custom-coreml-v1.24.2-4/onnxruntime-xcf-v2.zip",
+                           checksum: "95b02b97a92dd3478bd687676febc078a28ab28c97927a8b7d5302f91cbafc86")
     )
 }
 
